@@ -210,21 +210,22 @@ html {
 
 /* Header Styles */
 .header {
-    background: linear-gradient(135deg, #0a3cff 0%, #0072ff 100%);
     padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 5;
 }
 .header__container {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    max-width: 1200px;
+    max-width: 1126px;
     margin: 0 auto;
-    padding: 24px 16px;
+    padding: 24px 0;
 }
 .logo {
-    height: 40px;
     width: auto;
-    margin-right: 16px;
+
 }
 .header__title {
     font-family: 'Zoho_Puvi_Bold', Arial, sans-serif;
@@ -251,14 +252,15 @@ html {
     background: linear-gradient(135deg, #0a3cff 0%, #0072ff 100%);
     color: #fff;
     padding: 48px 0 56px 0;
+    margin: -103px 0 0 0;
 }
 .hero__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1126px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 200px 0;
     gap: 40px;
 }
 .hero__content {
@@ -280,7 +282,6 @@ html {
 .btn {
     display: inline-block;
     padding: 14px 32px;
-    border-radius: 6px;
     font-family: 'Zoho_Puvi_Bold', Arial, sans-serif;
     font-size: 1rem;
     text-decoration: none;
@@ -350,20 +351,21 @@ html {
 /* Testimonial Section */
 .testimonial {
     background: #f8f9fa;
-    padding: 48px 0;
     display: flex;
     justify-content: center;
 }
 .testimonial__container {
-    max-width: 800px;
+    max-width: 1126px;
     margin: 0 auto;
     padding: 0 16px;
 }
 .testimonial__card {
+    width: 1126px;
+    height: 533px;
     background: #fff;
     border-radius: 16px;
     box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-    padding: 40px 32px 32px 32px;
+    padding: 60px;
     text-align: center;
     position: relative;
 }
@@ -741,7 +743,6 @@ html {
     background: #ff4b2b;
     color: #fff;
     border: none;
-    border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     transition: background 0.2s;
 }

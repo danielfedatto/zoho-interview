@@ -580,3 +580,62 @@ html {
         height: 36px;
     }
 }
+
+/* Tabs Section */
+.tabs {
+    background: #fff;
+    padding: 56px 0 32px 0;
+}
+.tabs__container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 16px;
+    text-align: center;
+}
+.tabs__container h2 {
+    font-family: 'Zoho_Puvi_Bold', Arial, sans-serif;
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 32px;
+}
+.tabs__nav {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.tab {
+    font-family: 'Zoho_Puvi_Bold', Arial, sans-serif;
+    font-size: 1rem;
+    background: #f2f4f8;
+    color: #222;
+    border: none;
+    border-radius: 6px 6px 0 0;
+    padding: 12px 32px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    outline: none;
+}
+.tab.active, .tab:focus {
+    background: #0a3cff;
+    color: #fff;
+}
+.tab:hover:not(.active) {
+    background: #e6eaff;
+}
+
+@media (max-width: 600px) {
+    .tabs {
+        padding: 32px 0 16px 0;
+    }
+    .tabs__container h2 {
+        font-size: 1.2rem;
+    }
+    .tab {
+        padding: 10px 12px;
+        font-size: 0.95rem;
+    }
+    .tabs__nav {
+        gap: 6px;
+    }
+}
